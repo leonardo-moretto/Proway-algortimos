@@ -1,0 +1,335 @@
+Algoritmo "aprendendo repeticoes"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Rubem Oliota
+// Descrição   : Solicitar ao usuario um nº e repetir de 1 até este nº
+// Autor(a)    : Leonardo
+// Data atual  : 08/12/2021
+Var
+   // Seção de Declarações das variáveis
+   numero : inteiro
+   contador : inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   escreval ("Informe a quantidade de repetições")
+   leia(numero)
+   
+   se numero <=100 entao
+   
+   // fazer a repetição normalmente
+   
+   para contador de 1 até numero passo 1 faca
+          escreval("Repetindo pela ",contador," vez")
+   fimpara
+   
+   senao
+   
+   escreval ("Este valor é muito grande. Insira um nº menor ou igual a 100")
+   
+   fimse
+
+Fimalgoritmo
+
+===========================================================================================
+
+Algoritmo "repeticao invertida"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Rubem Oliota
+// Descrição   : Capturar a qtde de repeticoes e exibir de forma invertida
+// Autor(a)    : Leonardo
+// Data atual  : 08/12/2021
+Var
+   // Seção de Declarações das variáveis
+   qtde, cont : inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval ("Por gentileza, informe um valor para repetição")
+   leia(qtde)
+                                             se qtde <=100 entao
+   para cont de qtde até 1 passo -1 faca
+
+escreval ("Contagem regressiva ",cont," ...")
+
+ fimpara
+
+senao
+
+escreval ("Valor informado é muito alto. Tente novamente")
+
+      fimse
+
+Fimalgoritmo
+
+==================================================================================
+
+Algoritmo "Exercicio com repeticao para"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Rubem Oliota
+// Descrição   : Capturar nome do aluno e a quantidade de notas para calcular a media
+// Autor(a)    : Leonardo
+// Data atual  : 08/12/2021
+Var
+   // Seção de Declarações das variáveis
+   nome : caractere
+   qtde : inteiro
+   nota, soma : real
+   media : real
+   contador : inteiro
+   qtdetraco : inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   escreval ("Bem vindo ao programa de cálculo de médias")
+   escreval("")
+   escreval ("Por gentileza, informe o nome do aluno")
+   leia(nome)
+   limpatela
+   escreval ("Quantas provas o aluno ",nome," realizou?")
+   leia(qtde)
+
+   soma <- 0
+
+   para contador de 1 ate qtde passo 1 faca
+
+      escreval ("Informe a nota da",contador," ª prova do aluno ",nome)
+                         leia(nota)
+      soma <- soma + nota
+
+      media <- soma / qtde
+
+   fimpara
+           limpatela
+   se media >= 7 entao
+   escreval ("O aluno ",nome," teve média igual a ",media," e foi APROVADO")
+   SENAO
+   escreval ("O aluno ",nome," teve média igual a ",media," e foi REPROVADO")
+              fimse
+
+Fimalgoritmo
+
+===================================================================================
+
+Algoritmo "Exercicio com repeticao para"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Rubem Oliota
+// Descrição   : Capturar nome do aluno e a quantidade de notas para calcular a media
+// Autor(a)    : Leonardo
+// Data atual  : 08/12/2021
+Var
+   // Seção de Declarações das variáveis
+   nome : caractere
+   qtde : inteiro
+   nota, soma : real
+   media : real
+   contador : inteiro
+   qtdetraco : inteiro
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+
+   escreval ("Bem vindo ao programa de cálculo de médias")
+   para qtdetraco de 1 ate 50 passo 1 faca
+   escreva("=")
+               fimpara
+               escreval ("")
+   escreval ("Por gentileza, informe o nome do aluno")
+   leia(nome)
+   limpatela
+   escreval ("Quantas provas o aluno ",nome," realizou?")
+   leia(qtde)
+
+   soma <- 0
+
+   para contador de 1 ate qtde passo 1 faca
+
+      escreval ("Informe a nota da",contador," ª prova do aluno ",nome)
+                         leia(nota)
+      soma <- soma + nota
+
+      media <- soma / qtde
+
+   fimpara
+           limpatela
+   se media >= 7 entao
+   escreval ("O aluno ",nome," teve média igual a ",media," e foi APROVADO")
+   SENAO
+   escreval ("O aluno ",nome," teve média igual a ",media," e foi REPROVADO")
+              fimse
+
+
+
+Fimalgoritmo
+
+=========================================================================================
+
+Algoritmo "Tabuada"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Rubem Oliota
+// Descrição   : Calcular a tabuada conforme dados informados pelo usuário
+// Autor(a)    : Leonardo
+// Data atual  : 08/12/2021
+Var
+   // Seção de Declarações das variáveis
+   fator : inteiro
+   contador : inteiro
+   resultado : inteiro
+   qtdetraco : inteiro
+   tabuada : inteiro
+   titulo : inteiro
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   contador <- 0
+      escreval ("Bem vindo ao programa da tabuada")
+   para qtdetraco de 1 ate 50 faca
+
+      escreva("=")
+   fimpara
+
+   escreval ("")
+   escreval ("informe um nº")
+   leia(fator)
+   limpatela
+   titulo <- fator
+   escreval ("Seguem abaixo as tabuadas do ", fator," até 1")
+   para qtdetraco de 1 ate 50 faca
+      escreva("=")
+   fimpara
+   escreval ("")
+   escreval ("Tabuada do ",titulo)
+   para qtdetraco de 1 ate 50 faca
+      escreva("=")
+   fimpara
+   escreval ("")
+
+   para tabuada de fator ate 1 passo -1 faca
+      para    contador de 1 ate 10 passo 1 faca
+         resultado <- tabuada * contador
+         escreval (tabuada," x ",contador," = ",resultado)
+
+      fimpara
+      para qtdetraco de 1 ate 50 faca
+         escreva("=")
+      fimpara
+      escreval ("")
+      titulo <- titulo - 1
+      se titulo >= 1 entao
+         escreval("Tabuada do ", titulo)
+         fimse
+      para qtdetraco de 1 ate 50 faca
+         escreva("=")
+      fimpara
+      escreval ("")
+
+   fimpara
+
+
+
+Fimalgoritmo
+
+=====================================================================
+
+Algoritmo "Aprendendo Repita"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Rubem Oliota
+// Descrição   : Praticar repetição com repita (e não com para)
+// Autor(a)    : Leonardo
+// Data atual  : 08/12/2021
+Var
+   // Seção de Declarações das variáveis
+   quantidade : inteiro
+   contador : inteiro
+
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval ("Aprendendo repetição com REPITA")
+   escreval ("Quer parcelar em quantas vezes?")
+   leia(quantidade)
+
+   contador <- 1
+
+   repita
+      escreval ("repetindo pela ",contador," vez")
+   contador <- contador + 1
+   ate (contador > quantidade)
+
+
+
+Fimalgoritmo
+
+===============================================================================
+
+Algoritmo "Calculadora"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Rubem Oliota
+// Descrição   : Realizar vários cálculos sem sair do programa
+// Autor(a)    : Leonardo
+// Data atual  : 08/12/2021
+Var
+   // Seção de Declarações das variáveis
+   opcao : inteiro
+   numeroA,numeroB : real
+
+
+
+Inicio
+   // Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval("Programa Calculadora - com REPITA")
+
+   repita
+
+      escreval("Escollha uma ação do menu")
+      escreval("1 - Soma")
+      escreval("2 - Subtração")
+      escreval("3 - Multiplicação")
+      escreval("4 - Divisão")
+      escreval("0 - Sair")
+
+      leia(opcao)
+      limpatela
+
+      se (opcao > 0) e (opcao <= 4) entao
+
+         escreval ("Informe o primeiro nº")
+         leia (numeroA)
+
+         escreval ("Informe o segundo nº")
+         leia (numeroB)
+
+      fimse
+
+      escolha opcao
+         limpatela
+      caso 1
+         escreval("")
+         escreval("O resultado da soma entre ",numeroA," e ",numeroB," é igual a ",numeroA + numeroB)
+      caso 2
+         escreval("")
+         escreval("O resultado da subtração entre ",numeroA," e ",numeroB," é igual a ",numeroA - numeroB)
+      caso 3
+         escreval("")
+         escreval("O resultado da multiplicação entre ",numeroA," e ",numeroB," é igual a ",numeroA * numeroB)
+         escreval("")
+      caso 4
+         escreval("O resultado da divisão entre ",numeroA," e ",numeroB," é igual a ",numeroA / numeroB)
+      caso 0
+
+      outrocaso
+         escreval("")
+         escreval("====================================================================================")
+         escreval("")
+         escreval ("Opção inválida. Se desejar sair, digite 0")
+
+      fimescolha
+
+
+   ate (opcao=0)
+
+
+
+Fimalgoritmo
+
+=======================================================================================
