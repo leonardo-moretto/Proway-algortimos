@@ -8,7 +8,7 @@ Var
    // Seção de Declarações das variáveis
    opcao : inteiro
    numeroA,numeroB : real
-
+   qtdetraco : inteiro
 
 
 Inicio
@@ -55,7 +55,10 @@ Inicio
 
       outrocaso
          escreval("")
-         escreval("====================================================================================")
+         para qtdetraco de 1 ate 50 passo 1 faca
+            escreva("=")
+         fimpara
+         escreval ("")
          escreval("")
          escreval ("Opção inválida. Se desejar sair, digite 0")
 
